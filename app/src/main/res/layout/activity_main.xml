@@ -4,74 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/biru"
     tools:context="com.example.muas.tespeserta.MainActivity">
 
     <TextView
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
+        android:background="#00c8ff"
         android:gravity="center"
-        android:text="Skor Counter"
-        android:background="#26ff00"
+        android:text="SCORE COUNTER"
         android:textColor="#fff"
-        android:textSize="50sp"
-        />
+        android:textSize="30sp" />
 
     <LinearLayout
+        android:id="@+id/li_tengah"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:paddingRight="16dp"
-            android:layout_weight="1">
+            android:paddingRight="16dp">
 
             <TextView
+                android:id="@+id/textView_skorMadrid"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:textSize="50sp"
+                android:background="#f16262"
                 android:gravity="center"
                 android:text="3"
                 android:textColor="#fff"
-                android:background="#000000"/>
+                android:textSize="50sp" />
 
             <Button
+                android:id="@+id/button_madrid"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Madrid"/>
+                android:text="Madrid" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView_skorpsg"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:textSize="50sp"
+                android:background="#ea5864"
                 android:gravity="center"
                 android:text="1"
                 android:textColor="#fff"
-                android:background="#000000"/>
+                android:textSize="50sp" />
 
             <Button
+                android:id="@+id/button_psg"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="PSG"/>
+                android:text="PSG" />
+
         </LinearLayout>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/made_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView_reset"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="Made By Risna dan Nurul"
+        android:textColor="#f42136" />
+
     <Button
+        android:id="@+id/textView_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Reset"/>
+        android:text="RESET"
+        android:background="#58c3ea"
+        android:textColor="#fdfdfd"/>
 
 </RelativeLayout>
