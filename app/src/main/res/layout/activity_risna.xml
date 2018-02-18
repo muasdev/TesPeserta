@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.muas.tespeserta.risnaActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:paddingBottom="34dp"
+        android:text="Penghitung Skor"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sembarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="34dp"
+            android:textAlignment="center"
+            android:text="10"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/itumosaja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingBottom="34dp"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/ahaha"
+            android:layout_below="@+id/sembarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="TIM A"
+            android:textSize="20sp"
+            android:background="#ec2b2b"/>
+        <Button
+            android:layout_below="@+id/itumosaja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:text="TIM B"
+            android:textSize="20sp"
+            android:background="#3b5de6"/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:text="RESET"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp" />
+</LinearLayout>
